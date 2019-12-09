@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+			body {
+				background-color: #f2f2f2;
+				padding: 10vh 10vw 0 10vw;
+                transition: background-color .5s
+			}
+			body>div {
+				background-color: white;
+				padding: 2rem;
+				border-radius: 0.5rem;
+				border: 1px solid #dadada;
+			}
+			button {
+				margin-top: 1rem;
+				display: block;
+			}
+            label {
+                margin-left: 0.5rem;
+            }
+            img {
+                margin: 0.5rem 0 0.5rem 0;
+                max-width: 70vw;
+                max-height: 40vh;
+            }
+            .barre {
+                text-decoration: line-through;
+            }
+            .black {
+                background-color: black;
+            }
+            .blue {
+                background-color: blue;
+            }
+            .white {
+                background-color: #f2f2f2;
+            }
+            .red {
+                background-color: red;
+            }
+            .green {
+                background-color: green;
+            }
+            .yellow {
+                background-color: yellow;
+            }
+            .important {
+                color: red;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="module">
+            import init from './pkg/questionnaire_nsi.js';
+
+            async function run() {
+                await init();
+            }
+            run();
+        </script>
+    </body>
+</html>
